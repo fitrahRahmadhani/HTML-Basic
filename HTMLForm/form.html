@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+
+<body>
+    <!-- <form> digunakan untuk membuat form -->
+    <form action="">
+        <!-- Element pada formulir -->
+    </form>
+
+    <!-- <input> digunakan untuk membuat kotak input dimana user akan mengisi data -->
+    <form action="">
+        <input type="text" name="" id="" placeholder="Input">
+    </form>
+
+    <!-- <select> -> <option> digunakan untuk membuat dropdown -->
+    <select name="kota">
+        <option value="Jakarta">Jakarta</option>
+        <option value="Surabaya">Surabaya</option>
+    </select>
+
+    <!-- <fieldset> akan memberikan garis tepi pada element-element HTML yang ingin kita kelompokkan -->
+    <fieldset>
+        <label for="name">Nama: </label>
+        <input type="text" name="name" /><br>
+        <label for="address">Alamat: </label>
+        <input type="text" name="address" /><br>
+        <label for="phoneNumber">Nomor Telpon: </label>
+        <input type="text" name="phoneNumber" /><br>
+    </fieldset>
+
+    <!-- <legend> digunakan untuk memberikan keterangan pada element <fieldset> -->
+    <fieldset>
+        <legend>Data Pegawai</legend>
+        <label for="name">Nama: </label>
+        <input type="text" name="name" /><br>
+        <label for="address">Alamat: </label>
+        <input type="text" name="address" /><br>
+        <label for="phoneNumber">Nomor Telpon: </label>
+        <input type="text" name="phoneNumber" /><br>
+    </fieldset>
+
+    <!-- <textarea> digunakan untuk menampung input dari user berupa text yang lebih dari satu baris -->
+    <textarea rows="4" cols="50" placeholder="Tulis komentar Anda di sini..."></textarea>
+
+    <!-- <button> digunakan untuk membuat tombol -->
+    <button>Klik di sini</button>
+
+    <h3>Latihan</h3>
+    <form action="">
+        <fieldset>
+            <legend>Formulir Calon Pegawai</legend>
+            <p>Nama: <input type="text" name="nama"></p>
+            <p>Alamat: <input type="text" name="alamat"></p>
+            <p>Password: <input type="text" name="pass"></p>
+            <p>Jenis Kelamin: <input type="radio" name="jk" value="Laki-laki" checked>Laki-laki <input type="radio" name="jk" value="perempuan">Perempuan</p>
+            <p>Bahasa pemrograman yang dikuasai: 
+                <input type="checkbox" name="cb" value="web">Web 
+                <input type="checkbox" name="cb" value="mobile">Mobile 
+                <input type="checkbox" name="cb" value="desktop">Desktop 
+            </p>
+            <p>Kota alas: 
+                <select name="kota">
+                    <option value="semarang">Semarang</option>
+                    <option value="solo">Solo</option>
+                    <option value="malang">Malang</option>
+                </select>
+            </p>
+            <p>Apa yang membuat kami harus memilih Anda?</p>
+            <textarea name="alasan" cols="50" rows="10" placeholder="Tulis jawabannya di sini"></textarea>
+        </fieldset>
+    </form>
+</body>
+
+</html>
