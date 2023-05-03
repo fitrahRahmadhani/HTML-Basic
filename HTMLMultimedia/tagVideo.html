@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Video</title>
+</head>
+<body>
+    <!-- Sejak HTML 5 cara untuk menampilkan video secara langsung dapat menggunakan tag <video> -->
+    <video width="320" height="240" autoplay> 
+        <!-- atribut autoplay digunakan untuk memutar video secara langsung -->
+        <source src="https://bit.ly/3j6rPni">
+    </video>
+    <video width="320" height="240" controls> 
+        <!-- atribut control digunakan untuk menampilkan tombol play, pause, dan fullscreen -->
+        <source src="https://bit.ly/3j6rPni">
+    </video>
+    <video width="320" height="240" poster="https://skilvul-assets-01.s3-ap-southeast-1.amazonaws.com/lesson/intro-to-html/cat.jpeg" controls>
+        <!-- atribut poster  digunakan untuk menampilkan gambar tertentu sebelum video diputar, ini untuk menghindari web browser hanya menampilkan layar hitam -->
+        <source src="https://bit.ly/2FKluzq" />
+
+        <!-- Fallback Video Format digunakan untuk mengatasi masalah kompabilitas pada web browser-->
+        <video width="800" height="600">
+            <source src="link-ke-videonya" type="video/mp4" />
+            <source src="link-ke-videonya" type="video/ogg" />
+            <source src="link-ke-videonya" type="video/webm" />
+        </video>
+        <!-- Dengan begitu, andaikata browsernya tidak mendukung format mp4, dia akan beralih mencoba yang ada di bawahnya: yaitu ogg dan webm. -->
+    </video>
+</body>
+</html>
